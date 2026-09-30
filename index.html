@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Дашборд: Аутсорсинг персонала для Ашан Южные Врата</title>
+<title>ГДЕ ПАЛЛЕТ · Ашан ЮВ · Аутсорсинг персонала</title>
 <style>
 * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',Roboto,system-ui,sans-serif; -webkit-tap-highlight-color:transparent; }
 :root{
@@ -27,8 +27,8 @@ body{background:#f4f7fc; color:#1e293b; min-height:100vh; overflow-x:hidden;}
   background:#fff; border-radius:16px; padding:18px 14px 16px; margin-bottom:14px;
   display:flex; flex-direction:column; align-items:center; box-shadow:0 4px 14px rgba(0,0,0,.18);
 }
-.brand-text-logo{font-size:1.15rem; font-weight:800; color:var(--brand-red); line-height:1.2; text-align:center;}
-.brand-text-logo .num{font-size:1.6rem; font-weight:900; vertical-align:middle; margin-right:2px;}
+.brand-text-logo{font-size:1.1rem; font-weight:800; color:var(--brand-red); line-height:1.2; text-align:center;}
+.brand-text-logo .num{font-size:1.5rem; font-weight:900; vertical-align:middle; margin-right:2px;}
 .logo-stripe{width:70%; height:3px; background:linear-gradient(90deg,var(--brand-red) 0%,var(--brand-red) 50%,var(--brand-yellow) 50%,var(--brand-yellow) 100%); border-radius:2px; margin-top:12px;}
 .org-badge{display:inline-block; background:var(--brand-red); color:#fff; font-size:.75rem; font-weight:600; padding:4px 14px; border-radius:40px; letter-spacing:.5px;}
 .sidebar-header .sub{font-size:.8rem; opacity:.75; margin-top:12px; line-height:1.5;}
@@ -49,7 +49,6 @@ body{background:#f4f7fc; color:#1e293b; min-height:100vh; overflow-x:hidden;}
 .mobile-header{display:none; background:linear-gradient(135deg,var(--brand-navy) 0%,var(--brand-navy-light) 100%); padding:12px 16px; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:200; box-shadow:0 4px 12px rgba(0,0,0,.15);}
 .mobile-logo{background:#fff; border-radius:10px; padding:8px 12px;}
 .mobile-logo-text{font-size:.9rem; font-weight:800; color:var(--brand-red);}
-.mobile-logo-text .num{font-size:1.15rem; font-weight:900; margin-right:1px;}
 .burger-btn{background:var(--brand-red); color:#fff; border:none; width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.4rem; cursor:pointer; font-family:inherit; box-shadow:0 4px 12px rgba(217,25,32,.4);}
 .burger-btn:active{transform:scale(.95);}
 
@@ -80,7 +79,7 @@ body{background:#f4f7fc; color:#1e293b; min-height:100vh; overflow-x:hidden;}
 .kpi-card.sky{border-top-color:var(--brand-sky);}
 .kpi-card.violet{border-top-color:var(--brand-violet);}
 .kpi-label{font-size:.85rem; color:#64748b; text-transform:uppercase; letter-spacing:.5px; font-weight:600; margin-bottom:8px;}
-.kpi-value{font-size:1.7rem; font-weight:800; color:var(--brand-navy); line-height:1.15;}
+.kpi-value{font-size:1.6rem; font-weight:800; color:var(--brand-navy); line-height:1.15;}
 .kpi-sub{font-size:.8rem; color:#94a3b8; margin-top:4px;}
 
 /* STAT ROW */
@@ -92,13 +91,10 @@ body{background:#f4f7fc; color:#1e293b; min-height:100vh; overflow-x:hidden;}
 .value.warning{color:#d97706;}
 .value.negative{color:var(--brand-red-dark);}
 
-/* HIGHLIGHT */
 .highlight{background:#fef2f2; border-left:4px solid var(--brand-red); padding:16px 18px; border-radius:12px; margin-top:18px; font-size:1rem; line-height:1.55;}
 .highlight strong{color:var(--brand-red-dark);}
 .info-block{background:#f0f9ff; border-left:4px solid var(--brand-sky); padding:16px 18px; border-radius:12px; margin-top:18px; font-size:1rem; line-height:1.55;}
 .info-block strong{color:#0369a1;}
-.success-block{background:#f0fdf4; border-left:4px solid var(--brand-green); padding:16px 18px; border-radius:12px; margin-top:18px; font-size:1rem; line-height:1.55;}
-.success-block strong{color:#065f46;}
 
 /* FUNNEL */
 .funnel{display:flex; flex-direction:column; gap:8px; margin-top:16px;}
@@ -112,164 +108,109 @@ body{background:#f4f7fc; color:#1e293b; min-height:100vh; overflow-x:hidden;}
 .fs-5{background:linear-gradient(90deg,#059669 0%,#10b981 100%); box-shadow:0 8px 20px rgba(5,150,105,.35);}
 
 /* BARS */
-.bar-row{display:grid; grid-template-columns:180px 1fr 120px; gap:14px; align-items:center; padding:10px 0;}
+.bar-row{display:grid; grid-template-columns:200px 1fr 140px; gap:14px; align-items:center; padding:10px 0;}
 .bar-row .bar-label{font-size:.95rem; color:#475569; font-weight:500;}
 .bar-row .bar-value{font-size:1rem; font-weight:700; color:var(--brand-navy); text-align:right;}
-.bar-track{background:#f1f5f9; border-radius:8px; height:22px; overflow:hidden; position:relative;}
-.bar-fill{height:100%; border-radius:8px; transition:width .4s ease;}
+.bar-track{background:#f1f5f9; border-radius:8px; height:22px; overflow:hidden;}
+.bar-fill{height:100%; border-radius:8px;}
 .bar-fill.red{background:linear-gradient(90deg,#D91920,#B0151B);}
 .bar-fill.green{background:linear-gradient(90deg,#059669,#10b981);}
 .bar-fill.sky{background:linear-gradient(90deg,#0ea5e9,#38bdf8);}
 .bar-fill.violet{background:linear-gradient(90deg,#4338ca,#6366f1);}
 .bar-fill.amber{background:linear-gradient(90deg,#d97706,#f59e0b);}
 
-/* SCENARIO */
-.scenario-switch{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:24px;}
-.scenario-btn{padding:22px 20px; border-radius:18px; font-family:inherit; cursor:pointer; transition:all .2s; border:3px solid #e9edf4; background:#fff; text-align:left; display:flex; flex-direction:column; gap:8px;}
-.scenario-btn:hover{transform:translateY(-2px); box-shadow:0 8px 20px rgba(0,0,0,.08);}
-.scenario-btn.active-1{border-color:var(--brand-red); background:linear-gradient(135deg,#fef2f2 0%,#fff 100%); box-shadow:0 8px 24px rgba(217,25,32,.15);}
-.scenario-btn.active-2{border-color:var(--brand-sky); background:linear-gradient(135deg,#f0f9ff 0%,#fff 100%); box-shadow:0 8px 24px rgba(14,165,233,.15);}
-.scenario-btn.active-3{border-color:var(--brand-green); background:linear-gradient(135deg,#f0fdf4 0%,#fff 100%); box-shadow:0 8px 24px rgba(5,150,105,.15);}
-.scenario-btn-title{font-size:1.05rem; font-weight:800; color:var(--brand-navy);}
-.scenario-btn.active-1 .scenario-btn-title{color:var(--brand-red-dark);}
-.scenario-btn.active-2 .scenario-btn-title{color:#0369a1;}
-.scenario-btn.active-3 .scenario-btn-title{color:#065f46;}
-.scenario-btn-desc{font-size:.88rem; color:#64748b; line-height:1.45;}
-.scenario-btn-price{font-size:1.35rem; font-weight:900; color:var(--brand-navy); margin-top:4px;}
-.scenario-btn-price-period{font-size:.8rem; color:#64748b; font-weight:500;}
-
-/* TOTAL BOX */
-.total-box{background:linear-gradient(135deg,#0B2B4A 0%,#1E3A5F 100%); color:#fff; border-radius:24px; padding:36px 40px; box-shadow:0 12px 32px rgba(11,43,74,.2); position:relative; margin-bottom:24px;}
-.total-box::before{content:"📊 ИТОГОВЫЙ РАСЧЁТ"; position:absolute; top:-16px; left:36px; background:var(--brand-red); color:#fff; font-size:.85rem; font-weight:800; letter-spacing:1.5px; padding:6px 20px; border-radius:40px; box-shadow:0 4px 12px rgba(217,25,32,.4);}
-.total-rows{display:flex; flex-direction:column; gap:14px; margin-bottom:20px;}
-.total-row{display:flex; justify-content:space-between; align-items:center; padding:12px 0; border-bottom:1px solid rgba(255,255,255,.15); gap:16px; flex-wrap:wrap;}
-.total-row .tr-label{font-size:1.05rem; opacity:.9;}
-.total-row .tr-value{font-size:1.3rem; font-weight:800;}
-.total-row-nds{background:rgba(255,221,0,.08); border-radius:12px; padding:14px 18px !important; border:1px dashed rgba(255,221,0,.4) !important;}
-.total-row-nds .tr-label{color:#FFDD00; font-weight:700;}
-.total-row-nds .tr-value{color:#FFDD00;}
-.total-final{background:rgba(255,255,255,.08); border:2px dashed rgba(255,255,255,.25); border-radius:16px; padding:24px 28px; margin-top:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;}
-.total-final-label{font-size:1.1rem; font-weight:700; opacity:.9;}
-.total-final-value{font-size:2.4rem; font-weight:900; color:#FFDD00; line-height:1.1;}
-.total-final-sub{font-size:.85rem; opacity:.7; margin-top:4px;}
-
 /* TABLE */
-.table-wrap{overflow-x:auto; margin-top:8px;}
 .data-table{width:100%; border-collapse:collapse; font-size:1rem; min-width:520px;}
-.data-table thead th{background:var(--brand-navy); color:#fff; padding:14px 16px; text-align:left; font-weight:600; font-size:.95rem; letter-spacing:.3px;}
+.table-wrap{overflow-x:auto;}
+.data-table thead th{background:var(--brand-navy); color:#fff; padding:14px 16px; text-align:left; font-weight:600; font-size:.95rem;}
 .data-table thead th:first-child{border-radius:12px 0 0 0;}
 .data-table thead th:last-child{border-radius:0 12px 0 0; text-align:right;}
-.data-table tbody td{padding:14px 16px; border-bottom:1px solid #f1f5f9; vertical-align:middle; line-height:1.45; color:#1e293b;}
+.data-table tbody td{padding:14px 16px; border-bottom:1px solid #f1f5f9; color:#1e293b;}
 .data-table tbody tr:hover{background:#f8fafc;}
 .data-table tbody td:last-child{text-align:right; color:#475569; font-weight:600; white-space:nowrap;}
 .data-table tr.total-row-table{background:#f0fdf4; font-weight:700;}
 .data-table tr.total-row-table td{color:#065f46;}
 
-/* FINAL */
-.final-card{background:linear-gradient(135deg,#0B2B4A 0%,#1E3A5F 100%); color:#fff; border-radius:24px; padding:40px 44px; box-shadow:0 16px 40px rgba(11,43,74,.25);}
-.final-card-title{font-size:1.5rem; font-weight:700; margin-bottom:28px; padding-bottom:18px; border-bottom:2px solid rgba(255,255,255,.15); display:flex; align-items:center; gap:12px;}
-.final-grid{display:grid; grid-template-columns:1.2fr 1fr; gap:32px;}
-.final-section-title{font-size:1rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; opacity:.8; margin-bottom:14px;}
-.final-list{list-style:none; display:flex; flex-direction:column; gap:12px;}
-.final-list li{display:flex; align-items:flex-start; gap:12px; font-size:1.05rem; line-height:1.5;}
-.final-list li::before{content:"✓"; flex-shrink:0; width:24px; height:24px; background:#86efac; color:#065f46; border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:.85rem; margin-top:2px;}
-.final-price-box{background:rgba(255,255,255,.08); border:2px dashed rgba(255,221,0,.4); border-radius:18px; padding:24px 28px; margin-top:24px;}
-.final-price-label{font-size:1rem; opacity:.85; margin-bottom:6px;}
-.final-price-value{font-size:2.2rem; font-weight:900; color:#FFDD00; line-height:1.1; margin-bottom:4px;}
-.final-price-sub{font-size:.9rem; opacity:.75;}
-.contacts-box{background:rgba(255,255,255,.08); border-radius:18px; padding:24px 26px; display:flex; flex-direction:column; gap:16px;}
-.contact-item{display:flex; align-items:flex-start; gap:14px;}
-.contact-icon{flex-shrink:0; width:36px; height:36px; border-radius:10px; background:rgba(255,255,255,.13); display:flex; align-items:center; justify-content:center; font-size:1.1rem;}
-.contact-info{display:flex; flex-direction:column; gap:2px;}
-.contact-label{font-size:.85rem; opacity:.7;}
-.contact-value{font-size:1rem; font-weight:600; color:#fff; line-height:1.4;}
-.contact-value a{color:#fff; text-decoration:none;}
-.contact-value a:hover{color:#FFDD00;}
+/* SUMMARY BOX */
+.summary-box{background:linear-gradient(135deg,#0B2B4A 0%,#1E3A5F 100%); color:#fff; border-radius:24px; padding:36px 40px; box-shadow:0 12px 32px rgba(11,43,74,.2); position:relative; margin-bottom:24px;}
+.summary-box::before{content:"📊 ИТОГО"; position:absolute; top:-16px; left:36px; background:var(--brand-red); color:#fff; font-size:.85rem; font-weight:800; letter-spacing:1.5px; padding:6px 20px; border-radius:40px; box-shadow:0 4px 12px rgba(217,25,32,.4);}
+.summary-rows{display:flex; flex-direction:column; gap:14px; margin-bottom:20px;}
+.summary-row{display:flex; justify-content:space-between; align-items:center; padding:12px 0; border-bottom:1px solid rgba(255,255,255,.15); gap:16px; flex-wrap:wrap;}
+.summary-row .sr-label{font-size:1.05rem; opacity:.9;}
+.summary-row .sr-value{font-size:1.3rem; font-weight:800;}
+.summary-row-accent{background:rgba(255,221,0,.08); border-radius:12px; padding:14px 18px !important; border:1px dashed rgba(255,221,0,.4) !important;}
+.summary-row-accent .sr-label{color:#FFDD00; font-weight:700;}
+.summary-row-accent .sr-value{color:#FFDD00;}
+.summary-final{background:rgba(255,255,255,.08); border:2px dashed rgba(255,255,255,.25); border-radius:16px; padding:24px 28px; margin-top:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;}
+.summary-final-label{font-size:1.1rem; font-weight:700; opacity:.9;}
+.summary-final-value{font-size:2.4rem; font-weight:900; color:#FFDD00; line-height:1.1;}
+.summary-final-sub{font-size:.85rem; opacity:.7; margin-top:4px;}
 
-/* RESPONSIVE */
-@media (max-width:1100px){
-  html{font-size:16px;}
-  .kpi-grid{grid-template-columns:1fr 1fr;}
-  .scenario-switch{grid-template-columns:1fr;}
-  .bar-row{grid-template-columns:130px 1fr 100px;}
-}
+@media (max-width:1100px){html{font-size:16px;} .kpi-grid{grid-template-columns:1fr 1fr;} .bar-row{grid-template-columns:140px 1fr 110px;}}
 @media (max-width:1000px){
   .mobile-header{display:flex;}
-  .sidebar{position:fixed; top:72px; left:0; width:100%; height:calc(100vh - 72px); transform:translateX(-100%); transition:transform .3s ease; box-shadow:4px 0 24px rgba(0,0,0,.3); padding-top:20px;}
+  .sidebar{position:fixed; top:72px; left:0; width:100%; height:calc(100vh - 72px); transform:translateX(-100%); transition:transform .3s ease; padding-top:20px;}
   .sidebar.open{transform:translateX(0);}
   .sidebar-header{display:none;}
   .nav-tabs{flex-direction:column; gap:10px; padding:20px;}
   .nav-tab{font-size:1rem; padding:16px 18px; min-height:56px;}
-  .nav-tab .num{width:32px; height:32px; font-size:1rem;}
   .sidebar-footer{display:none;}
   .main{padding:24px 20px 40px;}
-  .two-cols, .tariffs-compare, .final-grid{grid-template-columns:1fr;}
+  .two-cols{grid-template-columns:1fr;}
   .kpi-grid{grid-template-columns:1fr 1fr;}
 }
 @media (max-width:700px){
   html{font-size:15px;}
   .main{padding:20px 14px 32px;}
-  .panel-header h1{font-size:1.4rem; gap:10px;}
-  .panel-header h1 .tag{font-size:.75rem; padding:4px 12px;}
-  .card{padding:22px 18px; border-radius:18px;}
-  .card-title{font-size:1.05rem;}
+  .panel-header h1{font-size:1.4rem;}
+  .card{padding:22px 18px;}
   .kpi-grid{grid-template-columns:1fr;}
-  .kpi-value{font-size:1.4rem;}
   .bar-row{grid-template-columns:1fr; gap:6px;}
   .bar-row .bar-value{text-align:left;}
-  .total-box, .final-card{padding:26px 18px; border-radius:18px;}
-  .total-box::before{left:14px; font-size:.7rem; padding:4px 12px; top:-13px;}
-  .total-final{flex-direction:column; align-items:flex-start;}
-  .total-final-value{font-size:2rem;}
-  .final-card-title{font-size:1.2rem;}
-  .final-price-value{font-size:1.8rem;}
-}
-@media (max-width:380px){
-  html{font-size:14px;}
-  .panel-header h1{font-size:1.25rem;}
+  .summary-box{padding:26px 18px;}
+  .summary-final{flex-direction:column; align-items:flex-start;}
+  .summary-final-value{font-size:2rem;}
 }
 </style>
 </head>
 <body>
 
 <div class="mobile-header">
-  <div class="mobile-logo"><div class="mobile-logo-text"><span class="num">📊</span>Ашан · Дашборд</div></div>
-  <button class="burger-btn" id="burgerBtn" aria-label="Меню">☰</button>
+  <div class="mobile-logo"><div class="mobile-logo-text"><span class="num">📊</span>Ашан ЮВ</div></div>
+  <button class="burger-btn" id="burgerBtn">☰</button>
 </div>
 
 <div class="layout">
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <div class="logo-container">
-        <div class="brand-text-logo"><span class="num">📊</span>Ашан Южные Врата</div>
+        <div class="brand-text-logo"><span class="num">📊</span>ГДЕ ПАЛЛЕТ</div>
         <div class="logo-stripe"></div>
       </div>
-      <span class="org-badge">АУТСОРСИНГ · 30 ДНЕЙ</span>
-      <div class="sub">Экономика сделки<br>для руководства</div>
+      <span class="org-badge">АШАН ЮВ · АУТСОРСИНГ</span>
+      <div class="sub">Проект «Ашан Южные Врата»<br>Аутсорсинг персонала · 30 дней</div>
     </div>
 
     <nav class="nav-tabs">
-      <button class="nav-tab active" data-tab="tab1"><span class="num">1</span><span>О СДЕЛКЕ</span></button>
-      <button class="nav-tab" data-tab="tab2"><span class="num">2</span><span>ЭКОНОМИКА</span></button>
-      <button class="nav-tab" data-tab="tab3"><span class="num">3</span><span>КАЛЬКУЛЯТОР</span></button>
-      <button class="nav-tab" data-tab="tab4"><span class="num">4</span><span>ДАШБОРД</span></button>
-      <button class="nav-tab" data-tab="tab5"><span class="num">5</span><span>ИТОГИ</span></button>
+      <button class="nav-tab active" data-tab="tab1"><span class="num">1</span><span>ДАННЫЕ О СДЕЛКЕ</span></button>
+      <button class="nav-tab" data-tab="tab2"><span class="num">2</span><span>РАСХОДЫ</span></button>
+      <button class="nav-tab" data-tab="tab3"><span class="num">3</span><span>ПРИБЫЛЬ</span></button>
     </nav>
 
-    <div class="sidebar-footer">Аутсорсинг персонала<br>ООО «ГДЕ ПАЛЛЕТ»</div>
+    <div class="sidebar-footer">ООО «ГДЕ ПАЛЛЕТ»<br>Проект «Ашан ЮВ»</div>
   </aside>
 
   <main class="main">
 
-    <!-- ТАБ 1. О СДЕЛКЕ -->
+    <!-- ===== БЛОК 1. ДАННЫЕ О СДЕЛКЕ ===== -->
     <section class="tab-panel active" id="tab1">
       <div class="panel-header">
-        <h1>Сделка с Ашан Южные Врата <span class="tag">30 рабочих дней</span></h1>
-        <p class="desc">Аутсорсинг складского персонала — комплектация товара на РЦ. 20 сотрудников, смена 11 часов, ставка Ашана 1 200 ₽/час с НДС.</p>
+        <h1>Данные о сделке <span class="tag">30 рабочих дней</span></h1>
+        <p class="desc">Аутсорсинг складского персонала — комплектация товара на РЦ «Ашан Южные Врата».</p>
       </div>
 
       <div class="kpi-grid">
-        <div class="kpi-card"><div class="kpi-label">Заказчик</div><div class="kpi-value" style="font-size:1.2rem;">Ашан Южные Врата</div><div class="kpi-sub">РЦ Москва</div></div>
+        <div class="kpi-card"><div class="kpi-label">Заказчик</div><div class="kpi-value" style="font-size:1.2rem;">Ашан ЮВ</div><div class="kpi-sub">РЦ Москва</div></div>
         <div class="kpi-card sky"><div class="kpi-label">Срок</div><div class="kpi-value">30 дней</div><div class="kpi-sub">рабочих</div></div>
         <div class="kpi-card violet"><div class="kpi-label">Сотрудников</div><div class="kpi-value">20</div><div class="kpi-sub">комплектовщиков</div></div>
         <div class="kpi-card green"><div class="kpi-label">Ставка Ашана</div><div class="kpi-value">1 200 ₽</div><div class="kpi-sub">за час с НДС</div></div>
@@ -284,59 +225,66 @@ body{background:#f4f7fc; color:#1e293b; min-height:100vh; overflow-x:hidden;}
             <div class="stat-row"><span class="label">Смена</span><span class="value">11 часов</span></div>
             <div class="stat-row"><span class="label">Сотрудников</span><span class="value">20 человек</span></div>
             <div class="stat-row"><span class="label">Срок</span><span class="value">30 рабочих дней</span></div>
+          </div>
+
+          <div class="card">
+            <div class="card-title"><span><span class="icon">⚙️</span>Параметры оплаты</span></div>
             <div class="stat-row"><span class="label">Выплата на руки</span><span class="value">4 500 ₽ / смена</span></div>
-            <div class="stat-row"><span class="label">НДФЛ / Взносы</span><span class="value">13% / 30%</span></div>
+            <div class="stat-row"><span class="label">НДФЛ</span><span class="value">13%</span></div>
+            <div class="stat-row"><span class="label">Страховые взносы</span><span class="value">30%</span></div>
+            <div class="stat-row"><span class="label">НДС</span><span class="value">22%</span></div>
             <div class="stat-row"><span class="label">Налог на прибыль</span><span class="value">25%</span></div>
           </div>
         </div>
+
         <div class="col">
           <div class="card">
-            <div class="card-title"><span><span class="icon">💡</span>Ключевая идея</span></div>
+            <div class="card-title"><span><span class="icon">💡</span>Суть сделки</span></div>
             <p style="font-size:1.05rem; line-height:1.65; color:#334155;">
               Мы оформляем 20 сотрудников официально в штат ООО «ГДЕ ПАЛЛЕТ», выплачиваем им <strong>4 500 ₽ на руки за смену</strong> (с учётом НДФЛ 13% и взносов 30%), обеспечиваем проживание и транспорт, а Ашан платит нам <strong>1 200 ₽/час с НДС</strong>.
             </p>
-            <div class="highlight">
-              <strong>Задача:</strong> рассчитать налоговую нагрузку и чистую прибыль за 30 дней контракта.
-            </div>
+            <div class="highlight"><strong>Задача:</strong> рассчитать налоговую нагрузку и чистую прибыль за 30 дней контракта.</div>
+          </div>
+
+          <div class="card">
+            <div class="card-title"><span><span class="icon">📊</span>Исходные показатели</span></div>
+            <div class="stat-row"><span class="label">Выручка за 1 день (с НДС)</span><span class="value">264 000 ₽</span></div>
+            <div class="stat-row"><span class="label">Выручка за 30 дней (с НДС)</span><span class="value">7 920 000 ₽</span></div>
+            <div class="stat-row"><span class="label">Выручка за 30 дней (без НДС)</span><span class="value">6 491 803 ₽</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ТАБ 2. ЭКОНОМИКА -->
+    <!-- ===== БЛОК 2. РАСХОДЫ ===== -->
     <section class="tab-panel" id="tab2">
       <div class="panel-header">
-        <h1>Экономика сделки <span class="tag">за 30 дней</span></h1>
-        <p class="desc">Выручка, расходы, налоги и чистая прибыль — по исходным параметрам сделки.</p>
+        <h1>Расходы <span class="tag">за 30 дней</span></h1>
+        <p class="desc">ФОТ, проживание, транспорт и налоги — все затраты по сделке.</p>
       </div>
 
       <div class="kpi-grid">
-        <div class="kpi-card"><div class="kpi-label">Выручка с НДС</div><div class="kpi-value">7,92 млн ₽</div><div class="kpi-sub">за 30 дней</div></div>
-        <div class="kpi-card sky"><div class="kpi-label">Расходы</div><div class="kpi-value">4,51 млн ₽</div><div class="kpi-sub">ФОТ + проживание + транспорт</div></div>
-        <div class="kpi-card green"><div class="kpi-label">Чистая прибыль</div><div class="kpi-value">1,48 млн ₽</div><div class="kpi-sub">после налога 25%</div></div>
-        <div class="kpi-card violet"><div class="kpi-label">Маржинальность</div><div class="kpi-value">22,8%</div><div class="kpi-sub">чистая</div></div>
+        <div class="kpi-card"><div class="kpi-label">ФОТ</div><div class="kpi-value">4,03 млн ₽</div><div class="kpi-sub">89% расходов</div></div>
+        <div class="kpi-card sky"><div class="kpi-label">Проживание</div><div class="kpi-value">270 000 ₽</div><div class="kpi-sub">450 ₽ × 20 × 30</div></div>
+        <div class="kpi-card violet"><div class="kpi-label">Транспорт</div><div class="kpi-value">210 000 ₽</div><div class="kpi-sub">7 000 ₽ × 30</div></div>
+        <div class="kpi-card green"><div class="kpi-label">Итого расходов</div><div class="kpi-value">4,51 млн ₽</div><div class="kpi-sub">без налогов</div></div>
       </div>
 
-      <div class="two-cols">
-        <div class="col">
-          <div class="card">
-            <div class="card-title"><span><span class="icon">💰</span>Доходная часть</span></div>
-            <div class="stat-row"><span class="label">Выручка за 1 день (с НДС)</span><span class="value">264 000 ₽</span></div>
-            <div class="stat-row"><span class="label">Выручка за 30 дней (с НДС)</span><span class="value">7 920 000 ₽</span></div>
-            <div class="stat-row"><span class="label">Выручка без НДС</span><span class="value">6 491 803 ₽</span></div>
-            <div class="stat-row"><span class="label">НДС к уплате</span><span class="value negative">−1 428 197 ₽</span></div>
-          </div>
-        </div>
+      <div class="card">
+        <div class="card-title"><span><span class="icon">💰</span>Фонд оплаты труда (ФОТ)</span></div>
+        <div class="stat-row"><span class="label">Выплата на руки 1 сотруднику</span><span class="value">4 500 ₽ / смена</span></div>
+        <div class="stat-row"><span class="label">НДФЛ 13%</span><span class="value">672,41 ₽</span></div>
+        <div class="stat-row"><span class="label">Начисленная зарплата (gross)</span><span class="value">5 172,41 ₽</span></div>
+        <div class="stat-row"><span class="label">Страховые взносы 30%</span><span class="value">1 551,72 ₽</span></div>
+        <div class="stat-row"><span class="label"><strong>Итого на 1 сотрудника за смену</strong></span><span class="value">6 724,13 ₽</span></div>
+        <div class="stat-row"><span class="label"><strong>ФОТ за 30 дней (20 чел.)</strong></span><span class="value negative">4 034 478 ₽</span></div>
+      </div>
 
-        <div class="col">
-          <div class="card">
-            <div class="card-title"><span><span class="icon">📉</span>Расходная часть</span></div>
-            <div class="stat-row"><span class="label">ФОТ (gross + взносы)</span><span class="value">4 034 478 ₽</span></div>
-            <div class="stat-row"><span class="label">Проживание</span><span class="value">270 000 ₽</span></div>
-            <div class="stat-row"><span class="label">Транспорт</span><span class="value">210 000 ₽</span></div>
-            <div class="stat-row"><span class="label">Итого расходов</span><span class="value negative">4 514 478 ₽</span></div>
-          </div>
-        </div>
+      <div class="card">
+        <div class="card-title"><span><span class="icon">📉</span>Структура расходов</span></div>
+        <div class="bar-row"><span class="bar-label">ФОТ</span><div class="bar-track"><div class="bar-fill red" style="width:89%"></div></div><span class="bar-value">4 034 478 ₽</span></div>
+        <div class="bar-row"><span class="bar-label">Проживание</span><div class="bar-track"><div class="bar-fill sky" style="width:6%"></div></div><span class="bar-value">270 000 ₽</span></div>
+        <div class="bar-row"><span class="bar-label">Транспорт</span><div class="bar-track"><div class="bar-fill green" style="width:5%"></div></div><span class="bar-value">210 000 ₽</span></div>
       </div>
 
       <div class="card">
@@ -356,68 +304,41 @@ body{background:#f4f7fc; color:#1e293b; min-height:100vh; overflow-x:hidden;}
       </div>
 
       <div class="card">
-        <div class="card-title"><span><span class="icon">✅</span>Финансовый результат</span></div>
-        <div class="stat-row"><span class="label">Выручка без НДС</span><span class="value">6 491 803 ₽</span></div>
-        <div class="stat-row"><span class="label">Расходы</span><span class="value negative">−4 514 478 ₽</span></div>
-        <div class="stat-row"><span class="label">Прибыль до налога</span><span class="value">1 977 325 ₽</span></div>
-        <div class="stat-row"><span class="label">Налог на прибыль 25%</span><span class="value negative">−494 331 ₽</span></div>
-        <div class="stat-row"><span class="label"><strong>Чистая прибыль</strong></span><span class="value positive">1 482 994 ₽</span></div>
-        <div class="stat-row"><span class="label">Чистая маржинальность</span><span class="value positive">22,8%</span></div>
+        <div class="card-title"><span><span class="icon">📊</span>Структура налогов</span></div>
+        <div class="bar-row"><span class="bar-label">НДС</span><div class="bar-track"><div class="bar-fill red" style="width:44%"></div></div><span class="bar-value">1 428 197 ₽</span></div>
+        <div class="bar-row"><span class="bar-label">Взносы 30%</span><div class="bar-track"><div class="bar-fill sky" style="width:29%"></div></div><span class="bar-value">931 034 ₽</span></div>
+        <div class="bar-row"><span class="bar-label">Прибыль 25%</span><div class="bar-track"><div class="bar-fill violet" style="width:15%"></div></div><span class="bar-value">494 331 ₽</span></div>
+        <div class="bar-row"><span class="bar-label">НДФЛ 13%</span><div class="bar-track"><div class="bar-fill amber" style="width:12%"></div></div><span class="bar-value">403 448 ₽</span></div>
       </div>
     </section>
 
-    <!-- ТАБ 3. КАЛЬКУЛЯТОР -->
+    <!-- ===== БЛОК 3. ПРИБЫЛЬ ===== -->
     <section class="tab-panel" id="tab3">
       <div class="panel-header">
-        <h1>Калькулятор сделки <span class="tag">интерактивно</span></h1>
-        <p class="desc">Меняйте параметры — расчёт пересчитывается автоматически. Выберите сценарий или настройте вручную.</p>
+        <h1>Прибыль <span class="tag">за 30 дней</span></h1>
+        <p class="desc">Выручка, чистая прибыль, маржинальность и unit-экономика.</p>
       </div>
 
-      <div class="scenario-switch">
-        <button class="scenario-btn active-1" onclick="setScenario('base')" id="sc1">
-          <div class="scenario-btn-title">📊 Базовый</div>
-          <div class="scenario-btn-desc">1 200 ₽/час · 20 чел. · 30 дней</div>
-          <div class="scenario-btn-price">1 483 000 ₽ <span class="scenario-btn-price-period">чистая</span></div>
-        </button>
-        <button class="scenario-btn" onclick="setScenario('plus')" id="sc2">
-          <div class="scenario-btn-title">📈 Рост</div>
-          <div class="scenario-btn-desc">1 300 ₽/час · 25 чел. · 30 дней</div>
-          <div class="scenario-btn-price">2 254 000 ₽ <span class="scenario-btn-price-period">чистая</span></div>
-        </button>
-        <button class="scenario-btn" onclick="setScenario('minus')" id="sc3">
-          <div class="scenario-btn-title">📉 Риск</div>
-          <div class="scenario-btn-desc">1 000 ₽/час · 20 чел. · 30 дней</div>
-          <div class="scenario-btn-price">617 000 ₽ <span class="scenario-btn-price-period">чистая</span></div>
-        </button>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-label">Выручка с НДС</div><div class="kpi-value">7,92 млн ₽</div><div class="kpi-sub">за 30 дней</div></div>
+        <div class="kpi-card sky"><div class="kpi-label">Всего налогов</div><div class="kpi-value">3,26 млн ₽</div><div class="kpi-sub">41% выручки</div></div>
+        <div class="kpi-card green"><div class="kpi-label">Чистая прибыль</div><div class="kpi-value">1,48 млн ₽</div><div class="kpi-sub">после налога 25%</div></div>
+        <div class="kpi-card violet"><div class="kpi-label">Маржинальность</div><div class="kpi-value">22,8%</div><div class="kpi-sub">чистая</div></div>
       </div>
 
-      <div class="total-box">
-        <div class="total-rows">
-          <div class="total-row"><span class="tr-label">Сценарий</span><span class="tr-value" id="scName">Базовый</span></div>
-          <div class="total-row"><span class="tr-label">Ставка Ашана</span><span class="tr-value" id="rate">1 200 ₽/час</span></div>
-          <div class="total-row"><span class="tr-label">Сотрудников</span><span class="tr-value" id="ppl">20 чел.</span></div>
-          <div class="total-row"><span class="tr-label">Дней</span><span class="tr-value" id="days">30</span></div>
-          <div class="total-row"><span class="tr-label">Выручка с НДС</span><span class="tr-value" id="rev">7 920 000 ₽</span></div>
-          <div class="total-row"><span class="tr-label">Расходы</span><span class="tr-value" id="exp">4 514 478 ₽</span></div>
-          <div class="total-row"><span class="tr-label">Налоги</span><span class="tr-value" id="tax">3 257 010 ₽</span></div>
-          <div class="total-row total-row-nds"><span class="tr-label">Чистая прибыль</span><span class="tr-value" id="np">1 482 994 ₽</span></div>
+      <div class="summary-box">
+        <div class="summary-rows">
+          <div class="summary-row"><span class="sr-label">Выручка с НДС</span><span class="sr-value">7 920 000 ₽</span></div>
+          <div class="summary-row"><span class="sr-label">Выручка без НДС</span><span class="sr-value">6 491 803 ₽</span></div>
+          <div class="summary-row"><span class="sr-label">Расходы</span><span class="sr-value">−4 514 478 ₽</span></div>
+          <div class="summary-row"><span class="sr-label">Прибыль до налога</span><span class="sr-value">1 977 325 ₽</span></div>
+          <div class="summary-row"><span class="sr-label">Налог на прибыль 25%</span><span class="sr-value">−494 331 ₽</span></div>
+          <div class="summary-row summary-row-accent"><span class="sr-label">Чистая прибыль</span><span class="sr-value">1 482 994 ₽</span></div>
         </div>
-        <div class="total-final">
-          <div><div class="total-final-label">Чистая маржинальность</div><div class="total-final-sub">от выручки без НДС</div></div>
-          <div style="text-align:right;"><div class="total-final-value" id="marg">22,8%</div><div class="total-final-sub">чистая</div></div>
+        <div class="summary-final">
+          <div><div class="summary-final-label">Чистая маржинальность</div><div class="summary-final-sub">от выручки без НДС</div></div>
+          <div style="text-align:right;"><div class="summary-final-value">22,8%</div><div class="summary-final-sub">чистая</div></div>
         </div>
-      </div>
-
-      <div class="info-block">
-        <strong>Как считаем:</strong> gross = 4 500 / 0,87; взносы 30%; НДС 22%; налог на прибыль 25%. Проживание 450 ₽ × 20 × 30 = 270 000 ₽. Транспорт 7 000 × 30 = 210 000 ₽.
-      </div>
-    </section>
-
-    <!-- ТАБ 4. ДАШБОРД -->
-    <section class="tab-panel" id="tab4">
-      <div class="panel-header">
-        <h1>Дашборд <span class="tag">визуализация</span></h1>
-        <p class="desc">Воронка денег, структура налогов и расходов, unit-экономика.</p>
       </div>
 
       <div class="card">
@@ -432,38 +353,20 @@ body{background:#f4f7fc; color:#1e293b; min-height:100vh; overflow-x:hidden;}
         </div>
       </div>
 
-      <div class="two-cols">
-        <div class="col">
-          <div class="card">
-            <div class="card-title"><span><span class="icon">🏛</span>Структура налогов</span></div>
-            <div class="bar-row"><span class="bar-label">НДС</span><div class="bar-track"><div class="bar-fill red" style="width:44%"></div></div><span class="bar-value">1 428 197 ₽</span></div>
-            <div class="bar-row"><span class="bar-label">Взносы 30%</span><div class="bar-track"><div class="bar-fill sky" style="width:29%"></div></div><span class="bar-value">931 034 ₽</span></div>
-            <div class="bar-row"><span class="bar-label">Прибыль 25%</span><div class="bar-track"><div class="bar-fill violet" style="width:15%"></div></div><span class="bar-value">494 331 ₽</span></div>
-            <div class="bar-row"><span class="bar-label">НДФЛ 13%</span><div class="bar-track"><div class="bar-fill amber" style="width:12%"></div></div><span class="bar-value">403 448 ₽</span></div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-title"><span><span class="icon">📉</span>Структура расходов</span></div>
-            <div class="bar-row"><span class="bar-label">ФОТ</span><div class="bar-track"><div class="bar-fill red" style="width:89%"></div></div><span class="bar-value">4 034 478 ₽</span></div>
-            <div class="bar-row"><span class="bar-label">Проживание</span><div class="bar-track"><div class="bar-fill sky" style="width:6%"></div></div><span class="bar-value">270 000 ₽</span></div>
-            <div class="bar-row"><span class="bar-label">Транспорт</span><div class="bar-track"><div class="bar-fill green" style="width:5%"></div></div><span class="bar-value">210 000 ₽</span></div>
-          </div>
-        </div>
-      </div>
-
       <div class="card">
         <div class="card-title"><span><span class="icon">👤</span>На 1 сотрудника / 1 смену</span></div>
-        <table class="data-table">
-          <thead><tr><th>Показатель</th><th>Сумма</th></tr></thead>
-          <tbody>
-            <tr><td>Выручка (с НДС)</td><td>13 200 ₽</td></tr>
-            <tr><td>Выручка (без НДС)</td><td>10 820 ₽</td></tr>
-            <tr><td>Затраты (ФОТ + проживание + транспорт)</td><td>7 524 ₽</td></tr>
-            <tr><td>Прибыль до налога</td><td>3 296 ₽</td></tr>
-            <tr class="total-row-table"><td>Чистая прибыль</td><td>2 472 ₽</td></tr>
-          </tbody>
-        </table>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Показатель</th><th>Сумма</th></tr></thead>
+            <tbody>
+              <tr><td>Выручка (с НДС)</td><td>13 200 ₽</td></tr>
+              <tr><td>Выручка (без НДС)</td><td>10 820 ₽</td></tr>
+              <tr><td>Затраты (ФОТ + проживание + транспорт)</td><td>7 524 ₽</td></tr>
+              <tr><td>Прибыль до налога</td><td>3 296 ₽</td></tr>
+              <tr class="total-row-table"><td>Чистая прибыль</td><td>2 472 ₽</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <div class="card">
@@ -472,46 +375,14 @@ body{background:#f4f7fc; color:#1e293b; min-height:100vh; overflow-x:hidden;}
         <div class="stat-row"><span class="label">Минимальная ставка</span><span class="value warning">918 ₽/час</span></div>
         <div class="stat-row"><span class="label">Запас прочности</span><span class="value positive">282 ₽/час (23,5%)</span></div>
       </div>
-    </section>
 
-    <!-- ТАБ 5. ИТОГИ -->
-    <section class="tab-panel" id="tab5">
-      <div class="panel-header">
-        <h1>Итоги и рекомендации <span class="tag">решение</span></h1>
-        <p class="desc">Общая сводка и рычаги увеличения прибыли.</p>
-      </div>
-
-      <div class="final-card">
-        <div class="final-card-title"><span>✅</span><span>Сделка рентабельна</span></div>
-        <div class="final-grid">
-          <div class="final-left">
-            <div>
-              <div class="final-section-title">Ключевые показатели</div>
-              <ul class="final-list">
-                <li>Выручка за 30 дней — 7 920 000 ₽ с НДС</li>
-                <li>Чистая прибыль — 1 482 994 ₽</li>
-                <li>Чистая маржинальность — 22,8%</li>
-                <li>Всего налогов — 3 257 010 ₽</li>
-                <li>Точка безубыточности — 918 ₽/час</li>
-              </ul>
-            </div>
-            <div class="final-price-box">
-              <div class="final-price-label">Чистая прибыль за 30 дней</div>
-              <div class="final-price-value">1 482 994 ₽</div>
-              <div class="final-price-sub">после всех налогов и расходов</div>
-            </div>
-          </div>
-
-          <div class="final-right">
-            <div class="contacts-box">
-              <div class="contact-item"><div class="contact-icon">📈</div><div class="contact-info"><div class="contact-label">Ставка Ашана 1 300 ₽/час</div><div class="contact-value">+400 000 ₽ чистой прибыли</div></div></div>
-              <div class="contact-item"><div class="contact-icon">👥</div><div class="contact-info"><div class="contact-label">+5 сотрудников</div><div class="contact-value">+370 000 ₽ чистой прибыли</div></div></div>
-              <div class="contact-item"><div class="contact-icon">🚚</div><div class="contact-info"><div class="contact-label">Снизить транспорт</div><div class="contact-value">+50 000 ₽</div></div></div>
-              <div class="contact-item"><div class="contact-icon">🏠</div><div class="contact-info"><div class="contact-label">Снизить проживание</div><div class="contact-value">+30 000 ₽</div></div></div>
-              <div class="contact-item"><div class="contact-icon">🏛</div><div class="contact-info"><div class="contact-label">Оптимизация налогов</div><div class="contact-value">до +300 000 ₽</div></div></div>
-            </div>
-          </div>
-        </div>
+      <div class="card">
+        <div class="card-title"><span><span class="icon">📈</span>Рычаги увеличения прибыли</span></div>
+        <div class="stat-row"><span class="label">Ставка Ашана 1 300 ₽/час</span><span class="value positive">+400 000 ₽</span></div>
+        <div class="stat-row"><span class="label">+5 сотрудников</span><span class="value positive">+370 000 ₽</span></div>
+        <div class="stat-row"><span class="label">Снизить транспорт</span><span class="value positive">+50 000 ₽</span></div>
+        <div class="stat-row"><span class="label">Снизить проживание</span><span class="value positive">+30 000 ₽</span></div>
+        <div class="stat-row"><span class="label">Оптимизация налогов</span><span class="value positive">до +300 000 ₽</span></div>
       </div>
     </section>
 
@@ -519,7 +390,6 @@ body{background:#f4f7fc; color:#1e293b; min-height:100vh; overflow-x:hidden;}
 </div>
 
 <script>
-// ===== БУРГЕР =====
 const burgerBtn = document.getElementById('burgerBtn');
 const sidebar = document.getElementById('sidebar');
 burgerBtn.addEventListener('click', () => sidebar.classList.toggle('open'));
@@ -539,78 +409,6 @@ document.querySelectorAll('.nav-tab').forEach(tab => {
 document.querySelector('.main').addEventListener('click', () => {
   if (window.innerWidth <= 1000 && sidebar.classList.contains('open')) sidebar.classList.remove('open');
 });
-
-// ===== КОНСТАНТЫ =====
-const NDS = 0.22;
-const PROFIT_TAX = 0.25;
-const NDFL = 0.13;
-const VZNOS = 0.30;
-const SALARY_NET = 4500;
-const LIVING = 450;
-const TRANSPORT = 7000;
-
-// ===== СЦЕНАРИИ =====
-const scenarios = {
-  base:  { name: 'Базовый',  rate: 1200, ppl: 20, days: 30 },
-  plus:  { name: 'Рост',     rate: 1300, ppl: 25, days: 30 },
-  minus: { name: 'Риск',     rate: 1000, ppl: 20, days: 30 }
-};
-let current = 'base';
-
-// ===== ФОРМАТ =====
-function fmt(v) { return Math.round(v).toLocaleString('ru-RU') + ' ₽'; }
-function fmtPct(v) { return v.toLocaleString('ru-RU', {minimumFractionDigits:1, maximumFractionDigits:1}) + '%'; }
-
-// ===== РАСЧЁТ =====
-function calc(rate, ppl, days) {
-  const revenueWithNds = rate * 11 * ppl * days;
-  const revenueWithoutNds = revenueWithNds / (1 + NDS);
-  const nds = revenueWithNds - revenueWithoutNds;
-
-  const grossPerShift = SALARY_NET / (1 - NDFL);
-  const fotPerShift = grossPerShift * (1 + VZNOS);
-  const fotTotal = fotPerShift * ppl * days;
-
-  const livingTotal = LIVING * ppl * days;
-  const transportTotal = TRANSPORT * days;
-  const expenses = fotTotal + livingTotal + transportTotal;
-
-  const profitBeforeTax = revenueWithoutNds - expenses;
-  const profitTax = profitBeforeTax * PROFIT_TAX;
-  const netProfit = profitBeforeTax - profitTax;
-  const margin = netProfit / revenueWithoutNds * 100;
-
-  const ndfl = grossPerShift * NDFL * ppl * days;
-  const vznosy = grossPerShift * VZNOS * ppl * days;
-  const taxes = nds + vznosy + profitTax + ndfl;
-
-  return { revenueWithNds, revenueWithoutNds, nds, fotTotal, livingTotal, transportTotal, expenses, profitBeforeTax, profitTax, netProfit, margin, taxes, ndfl, vznosy };
-}
-
-// ===== СЦЕНАРИЙ =====
-function setScenario(key) {
-  current = key;
-  const s = scenarios[key];
-  document.getElementById('sc1').classList.remove('active-1','active-2','active-3');
-  document.getElementById('sc2').classList.remove('active-1','active-2','active-3');
-  document.getElementById('sc3').classList.remove('active-1','active-2','active-3');
-  if (key === 'base') document.getElementById('sc1').classList.add('active-1');
-  if (key === 'plus') document.getElementById('sc2').classList.add('active-2');
-  if (key === 'minus') document.getElementById('sc3').classList.add('active-3');
-
-  const r = calc(s.rate, s.ppl, s.days);
-  document.getElementById('scName').textContent = s.name;
-  document.getElementById('rate').textContent = s.rate + ' ₽/час';
-  document.getElementById('ppl').textContent = s.ppl + ' чел.';
-  document.getElementById('days').textContent = s.days;
-  document.getElementById('rev').textContent = fmt(r.revenueWithNds);
-  document.getElementById('exp').textContent = fmt(r.expenses);
-  document.getElementById('tax').textContent = fmt(r.taxes);
-  document.getElementById('np').textContent = fmt(r.netProfit);
-  document.getElementById('marg').textContent = fmtPct(r.margin);
-}
-
-setScenario('base');
 </script>
 
 </body>
